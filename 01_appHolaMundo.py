@@ -2,9 +2,9 @@ import flet as ft
 
 def main(page: ft.Page):    
     page.title = "Mi primera app Flet"
-   
+
     page.bgcolor = "#7CFFE9"  # color del fondo en tono claro
-   
+
     page.add(
         ft.Text(
             "Hola, mundo desde Flet!", # Enseguida las propiedades para el estilo del texto
