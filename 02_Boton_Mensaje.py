@@ -37,7 +37,14 @@ def main(page: ft.Page):
             blur_radius=10, spread_radius=1, color=ft.Colors.BLACK26
         )
     )
-    page.add(tarjeta)
+    page.add(
+        ft.Column(
+            controls=[tarjeta],
+            alignment=ft.MainAxisAlignment.CENTER,
+            horizontal_alignment=ft.CrossAxisAlignment.CENTER,
+            expand=True
+        )
+    )
 
 if __name__ == "__main__":
     ft.app(target=main)
